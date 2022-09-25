@@ -76,17 +76,23 @@ html.bg-color-6 a {
   margin: 0 auto;
 }
 
+@media (max-width: 576px) and (max-width: 576px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
 .cover--text {
   height: 65vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .cover--text {
+    height: 40vh;
+  }
 }
 
 .cover--text h1 {
@@ -95,6 +101,12 @@ html.bg-color-6 a {
   font-family: 'nightcap_nfregular';
   font-weight: normal;
   font-style: normal;
+}
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .cover--text h1 {
+    font-size: 55px;
+  }
 }
 
 .footer--navigation {
@@ -110,18 +122,49 @@ html.bg-color-6 a {
           justify-content: center;
 }
 
+@media (max-width: 576px) and (max-width: 576px) {
+  .footer--navigation {
+    height: 30vh;
+  }
+}
+
 .footer--navigation nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .footer--navigation nav ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 10px 68px;
+  }
 }
 
 .footer--navigation nav ul li {
   margin: 0 45px 0 45px;
 }
 
+@media (max-width: 576px) and (max-width: 576px) {
+  .footer--navigation nav ul li {
+    margin: 0 0 10px 0;
+  }
+}
+
 .footer--navigation nav ul li a {
   font-size: 14px;
   text-decoration: none;
+}
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .footer--navigation nav ul li a {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=Screen.css.map */

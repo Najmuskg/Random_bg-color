@@ -4,3 +4,5 @@ $( document ).ready(function() {
     var randomNum = Math.floor(Math.random() * listOfClasses.length); 
     $("html").addClass(listOfClasses[randomNum]);
 });
+
+
